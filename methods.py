@@ -6,50 +6,70 @@
 #
 # So if the number 5 is passed in, num_list_with_arg should return [1, 2, 3, 4]
 
+result = []
+n = 0
+
+def num_list_with_arg(n):
+	i = 1
+	while i < n:
+		result.append(i)
+		i += 1
+	print(result)
+
+num_list_with_arg(n)
 
 # #2: Modify the has_ruby_exp method below so that it returns a SORTED list of
 # all instructors who have Ruby experience (i.e. where "ruby" == True)
 # The list should contain only names of instructors.
 # make sure you name the list ruby_experience before returning it.
 
-def has_ruby_exp():
-    ruby_experience = []
-
-    experience = {
-        'jimmy': {
-            'bjj': False,
-            'soccer': False,
-            'ruby': True,
-            'baking': True,
-            'biking': True,
-            'pasta': False
-        },
-        'don': {
-            'bjj': False,
-            'soccer': False,
-            'ruby': True,
-            'baking': True,
-            'biking': False,
-            'pasta': False
-        },
-        'zakk': {
-            'bjj': False,
-            'soccer': False,
-            'ruby': True,
-            'baking': False,
-            'biking': False,
-            'pasta': True
-        },
-        'hector': {
-            'bjj': True,
-            'soccer': True,
-            'ruby': False,
-            'baking': False,
-            'biking': True,
-            'pasta': False
-        }
-    }
+# def has_ruby_exp():
+#     ruby_experience = sorted(unsorted_ruby)
+#     unsorted_ruby = []
+#     experience = {
+#         'jimmy': {
+#             'bjj': False,
+#             'soccer': False,
+#             'ruby': True,
+#             'baking': True,
+#             'biking': True,
+#             'pasta': False
+#         },
+#         'don': {
+#             'bjj': False,
+#             'soccer': False,
+#             'ruby': True,
+#             'baking': True,
+#             'biking': False,
+#             'pasta': False
+#         },
+#         'zakk': {
+#             'bjj': False,
+#             'soccer': False,
+#             'ruby': True,
+#             'baking': False,
+#             'biking': False,
+#             'pasta': True
+#         },
+#         'hector': {
+#             'bjj': True,
+#             'soccer': True,
+#             'ruby': False,
+#             'baking': False,
+#             'biking': True,
+#             'pasta': False
+#         }
+#     for i < len(expreience):
+#     i = 0
+#         if experience[i][2] == True:
+#             unsorted_ruby.append(experience[0])
+#             i +=
+#         else:
+#             i +=
+#     print(ruby_experience())
+#     }
     
+# has_ruby_exp()
 
 
 # #3: Create a method called toggle_str_num that takes an argument. If the
